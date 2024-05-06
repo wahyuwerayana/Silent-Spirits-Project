@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1429034378}
+      - m_Target: {fileID: 1429034380}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: DisplayNextSentence
         m_Mode: 1
@@ -403,11 +403,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Anisa
+    charNumber:
+    - 
+    - 
+    - Anisa
+    - Anisa's Mother
+    - Anisa
     sentences:
-    - Saya Anisa
-    - Nanti akan masuk ke mansion
-    - Semoga berhasil
+    - At the beach
+    - Anisa is on the beach with her mother, they spend the whole day playing at
+      the beach.
+    - What a beautiful day, I wish I could stay here forever.
+    - Anisa, it's already 5 o'clock. We should pack up soon before it gets too dark.
+    - Ok mom.
 --- !u!1 &486591534
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +956,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1429034379}
-  - component: {fileID: 1429034378}
+  - component: {fileID: 1429034380}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -956,20 +964,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1429034378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1429034377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03884fd664628b647bd021b1b92643f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
 --- !u!4 &1429034379
 Transform:
   m_ObjectHideFlags: 0
@@ -985,6 +979,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1429034380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429034377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03884fd664628b647bd021b1b92643f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 2082203838}
+  dialogueText: {fileID: 1947884780}
+  animator: {fileID: 2071178004}
 --- !u!1 &1947884778
 GameObject:
   m_ObjectHideFlags: 0
@@ -1132,6 +1141,7 @@ GameObject:
   - component: {fileID: 2071178001}
   - component: {fileID: 2071178003}
   - component: {fileID: 2071178002}
+  - component: {fileID: 2071178004}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -1199,6 +1209,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071178000}
   m_CullTransparentMesh: 1
+--- !u!95 &2071178004
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071178000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cbf11344e55b46f408589ad1665b1ad4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2082203836
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,8 +1264,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212.38147, y: 167.8935}
-  m_SizeDelta: {x: 349.237, y: 64.213}
+  m_AnchoredPosition: {x: -1.502, y: 167.8935}
+  m_SizeDelta: {x: 771, y: 64.213}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082203838
 MonoBehaviour:
