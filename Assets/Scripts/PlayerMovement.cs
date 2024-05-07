@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed = 4f;
     private float jumpingPower = 6f;
     private bool isFacingRight = true;
-    public Animator walkBool;
+    public Animator animationBool;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -18,13 +18,19 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         if(Input.GetAxisRaw("Horizontal") != 0){
-            walkBool.SetBool("isWalking", true);
+            animationBool.SetBool("isWalking", true);
         } else{
-            walkBool.SetBool("isWalking", false);
+            animationBool.SetBool("isWalking", false);
         }
         horizontal = Input.GetAxisRaw("Horizontal");
         if(Input.GetButtonDown("Jump") && isGrounded()){
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+        }
+
+        if(isGrounded()){
+            animationBool.SetBool("onAir", false);
+        } else if(!isGrounded()){
+            animationBool.SetBool("onAir", true);
         }
 
         if(Input.GetButtonUp("Jump") && rb.velocity.y > 0f){
@@ -35,7 +41,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate(){
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-       
     }
 
     private bool isGrounded(){
