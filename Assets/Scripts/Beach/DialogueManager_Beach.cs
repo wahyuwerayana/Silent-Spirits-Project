@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager_Beach : MonoBehaviour
 {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
-    public Animator animator;
+    public Animator animator, transitionAnimator;
     private bool showWholeSentence = false;
     private bool canClick = true;
     private Queue<string> charName;
@@ -68,7 +69,15 @@ public class DialogueManager : MonoBehaviour
         canClick = true;
     }
 
+    IEnumerator waitTransition(){
+        yield return new WaitForSeconds(.5f);
+        transitionAnimator.SetTrigger("startTransition");
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("Chapter1");
+    }
+
     void EndDialogue(){
         animator.SetBool("isOpen", false);
+        StartCoroutine("waitTransition");
     }
 }
