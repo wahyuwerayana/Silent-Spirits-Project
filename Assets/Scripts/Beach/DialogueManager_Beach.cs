@@ -73,7 +73,7 @@ public class DialogueManager_Beach : MonoBehaviour
         yield return new WaitForSeconds(.5f);
         transitionAnimator.SetTrigger("startTransition");
         yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("Chapter1");
+        SceneManager.LoadScene("Forest");
     }
 
     void EndDialogue(){

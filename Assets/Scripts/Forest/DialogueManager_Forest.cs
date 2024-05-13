@@ -8,7 +8,9 @@ public class DialogueManager_Forest : MonoBehaviour
 {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
-    public Animator animator;
+    public Animator animator, movement, transition;
+    public GameObject player;
+    public Rigidbody2D rb;
     private bool showWholeSentence = false;
     private bool canClick = true;
     private Queue<string> charName;
@@ -16,11 +18,16 @@ public class DialogueManager_Forest : MonoBehaviour
     void Start(){
         sentences = new Queue<string>();
         charName = new Queue<string>();
+        player = GameObject.Find("Player");
+        rb = player.GetComponent<Rigidbody2D>();
+        movement = player.GetComponent<Animator>();
     }
 
     public void StartDialogue(Dialogue dialogue){
         animator.SetBool("isOpen", true);
-        
+        player.GetComponent<PlayerMovement>().enabled = false;
+        rb.velocity = new Vector2(0, 0);
+        movement.SetBool("isWalking", false);
         charName.Clear();
         
         foreach (string name in dialogue.charNumber){
@@ -70,5 +77,7 @@ public class DialogueManager_Forest : MonoBehaviour
 
     void EndDialogue(){
         animator.SetBool("isOpen", false);
+        player.GetComponent<PlayerMovement>().enabled = true;
+        transition.SetTrigger("startTransition");
     }
 }
