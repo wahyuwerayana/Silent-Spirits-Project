@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Anisa@Walk
+  m_Name: Anisa@Diam
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,14 +21,6 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 21300000, guid: 097e99f14876754488684c6d87931957, type: 3}
-    - time: 0.11666667
-      value: {fileID: 21300000, guid: 0acd4c58991e6884394b9c1432d9dcb7, type: 3}
-    - time: 0.33333334
-      value: {fileID: 21300000, guid: 57975df7c96f64e4b9ca8c2339ad9c36, type: 3}
-    - time: 0.5
-      value: {fileID: 21300000, guid: 1e5fbf06d4b0abe4f93ef855d233bf5e, type: 3}
-    - time: 0.6666667
       value: {fileID: 21300000, guid: 097e99f14876754488684c6d87931957, type: 3}
     attribute: m_Sprite
     path: 
@@ -53,16 +45,12 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
     - {fileID: 21300000, guid: 097e99f14876754488684c6d87931957, type: 3}
-    - {fileID: 21300000, guid: 0acd4c58991e6884394b9c1432d9dcb7, type: 3}
-    - {fileID: 21300000, guid: 57975df7c96f64e4b9ca8c2339ad9c36, type: 3}
-    - {fileID: 21300000, guid: 1e5fbf06d4b0abe4f93ef855d233bf5e, type: 3}
-    - {fileID: 21300000, guid: 097e99f14876754488684c6d87931957, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.68333334
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
