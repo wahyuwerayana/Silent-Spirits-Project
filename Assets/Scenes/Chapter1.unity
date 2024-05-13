@@ -3619,7 +3619,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 0.2
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -7531,7 +7531,7 @@ Transform:
   m_GameObject: {fileID: 334569505}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.46, y: 5.25, z: -10}
+  m_LocalPosition: {x: -3.7, y: -2.8, z: -10}
   m_LocalScale: {x: 0.2774396, y: 0.2774396, z: 0.2774396}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56097,11 +56097,11 @@ PrefabInstance:
       objectReference: {fileID: 1891596621}
     - target: {fileID: 1825808083554216417, guid: 0ad81932997aff743982b586800e600d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -44.46
+      value: -3.7
       objectReference: {fileID: 0}
     - target: {fileID: 1825808083554216417, guid: 0ad81932997aff743982b586800e600d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.25
+      value: -2.8
       objectReference: {fileID: 0}
     - target: {fileID: 1825808083554216417, guid: 0ad81932997aff743982b586800e600d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68171,7 +68171,7 @@ Transform:
   m_GameObject: {fileID: 1966912393}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -44.46, y: 5.25, z: -10}
+  m_LocalPosition: {x: -3.7, y: -2.8, z: -10}
   m_LocalScale: {x: 0.89393, y: 0.75090116, z: 0.89393}
   m_ConstrainProportionsScale: 0
   m_Children:
