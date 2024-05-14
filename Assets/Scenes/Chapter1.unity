@@ -7506,7 +7506,7 @@ Camera:
   far clip plane: 10000
   field of view: 60
   orthographic: 1
-  orthographic size: 17.133434
+  orthographic size: 17.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7534,7 +7534,8 @@ Transform:
   m_LocalPosition: {x: -3.7, y: -2.8, z: -10}
   m_LocalScale: {x: 0.2774396, y: 0.2774396, z: 0.2774396}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1032776100}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &334569509
@@ -31205,6 +31206,50 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1032776099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1032776100}
+  - component: {fileID: 1032776101}
+  m_Layer: 0
+  m_Name: cm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1032776100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032776099}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.336237, y: 10.092287, z: 36.043884}
+  m_LocalScale: {x: 3.6043882, y: 3.6043882, z: 3.6043882}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 334569508}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1032776101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032776099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1053377282
 GameObject:
   m_ObjectHideFlags: 0
@@ -68145,7 +68190,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1855592063}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 17.133434
+    OrthographicSize: 17.3
     NearClipPlane: 0.3
     FarClipPlane: 10000
     Dutch: 0
