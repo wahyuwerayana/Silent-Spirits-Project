@@ -80,7 +80,7 @@ public class DialogueManager_Beach : MonoBehaviour
     IEnumerator waitTransition(){
         yield return new WaitForSeconds(.5f);
         transitionAnimator.SetTrigger("startTransition");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Forest");
     }
 

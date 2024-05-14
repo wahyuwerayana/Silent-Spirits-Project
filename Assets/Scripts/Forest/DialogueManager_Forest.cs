@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager_Forest : MonoBehaviour
 {
+    public int counter = 0;
     public GameObject nameBox;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
@@ -83,9 +84,20 @@ public class DialogueManager_Forest : MonoBehaviour
         canClick = true;
     }
 
+    IEnumerator sceneFinish(){
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Chapter1");
+    }
+
     void EndDialogue(){
+        counter++;
         animator.SetBool("isOpen", false);
-        player.GetComponent<PlayerMovement>().enabled = true;
-        transition.SetTrigger("startTransition");
+        if(counter != 4)
+            player.GetComponent<PlayerMovement>().enabled = true;
+        if(counter == 4 || counter == 1){
+            transition.SetTrigger("startTransition");
+            if(counter == 4)
+                StartCoroutine("sceneFinish");
+        }
     }
 }
