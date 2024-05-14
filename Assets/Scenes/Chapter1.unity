@@ -3619,7 +3619,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 3
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000
@@ -7627,21 +7627,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prize
       objectReference: {fileID: 0}
-    - target: {fileID: 1526832162706790565, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
-      propertyPath: m_UseAutoMass
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1526832162706790565, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1576638359926758524, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.51
+      value: -42.517
       objectReference: {fileID: 0}
     - target: {fileID: 1576638359926758524, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.36
+      value: 6.298
       objectReference: {fileID: 0}
     - target: {fileID: 1576638359926758524, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7673,26 +7665,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1576638359926758524, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2267146722133746709, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
-      propertyPath: dropForce
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9184602292808051718, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9622642
-      objectReference: {fileID: 0}
-    - target: {fileID: 9184602292808051718, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
-      propertyPath: m_Color.g
-      value: 0.73972887
-      objectReference: {fileID: 0}
-    - target: {fileID: 9184602292808051718, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
-      propertyPath: m_Color.r
-      value: 0.28867915
-      objectReference: {fileID: 0}
-    - target: {fileID: 9184602292808051718, guid: 2b75a80bd3e9f484e983b0d7fa1cfce9, type: 3}
-      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24938,7 +24910,6 @@ GameObject:
   - component: {fileID: 835450958}
   - component: {fileID: 835450957}
   - component: {fileID: 835450956}
-  - component: {fileID: 835450955}
   m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
@@ -24961,63 +24932,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1156588824}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!66 &835450955
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835450953}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths:
-  - m_Collider: {fileID: 835450956}
-    m_ColliderPaths:
-    - - X: 690182272
-        Y: -42237892
-      - X: -89785616
-        Y: -42237892
-      - X: -89785616
-        Y: -51231364
-      - X: 690182272
-        Y: -51231364
-  m_CompositePaths:
-    m_Paths:
-    - - {x: 69.018196, y: -5.1231365}
-      - {x: 69.018196, y: -4.223789}
-      - {x: -8.978561, y: -4.2238183}
-      - {x: -8.978532, y: -5.1231365}
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
-  m_UseDelaunayMesh: 0
-  m_CompositeGameObject: {fileID: 835450953}
 --- !u!61 &835450956
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56177,6 +56091,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1446950762151706847, guid: 0ad81932997aff743982b586800e600d, type: 3}
+      propertyPath: animationBool
+      value: 
+      objectReference: {fileID: 1891596621}
     - target: {fileID: 1825808083554216417, guid: 0ad81932997aff743982b586800e600d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -44.46
@@ -66093,6 +66011,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcDrop: {fileID: 922898254}
+--- !u!95 &1891596621 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1604095166843891988, guid: 0ad81932997aff743982b586800e600d, type: 3}
+  m_PrefabInstance: {fileID: 1560112577}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1892086639
 GameObject:
   m_ObjectHideFlags: 0

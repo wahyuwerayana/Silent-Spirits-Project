@@ -63,7 +63,7 @@ public class DialogueManager : MonoBehaviour
         foreach(char letter in sentence.ToCharArray()){
             dialogueText.text += letter;
             if(!showWholeSentence)
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.025f);
         }
         canClick = true;
     }
