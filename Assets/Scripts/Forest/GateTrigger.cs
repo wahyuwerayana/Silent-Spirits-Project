@@ -12,9 +12,11 @@ public class GateTrigger : MonoBehaviour
         gateAnimator = gate.GetComponent<Animator>();
         gateCollider = gate.GetComponent<BoxCollider2D>();
     }
-    private void OnTriggerEnter2D(Collider2D other){
+    private void OnTriggerStay2D(Collider2D other){
+        if(Input.GetKeyDown(KeyCode.F)){
             gateAnimator.SetTrigger("openGate");
             gateCollider.enabled = false;
             Destroy(gameObject);
+        }
     }
 }

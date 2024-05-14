@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class DialogueManager_Forest : MonoBehaviour
 {
+    public GameObject nameBox;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Animator animator, movement, transition;
@@ -56,9 +57,16 @@ public class DialogueManager_Forest : MonoBehaviour
             EndDialogue();
             return;
         }
+
         string currName = charName.Dequeue();
         nameText.text = currName;
         string sentence = sentences.Dequeue();
+
+        if(currName.Length == 0){
+            nameBox.SetActive(false);
+        } else if(currName.Length >= 1){
+            nameBox.SetActive(true);
+        }
         
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
