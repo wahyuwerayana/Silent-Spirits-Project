@@ -1,0 +1,1887 @@
+fileFormatVersion: 2
+guid: d7f17c7c33cbdc141b519e7787b0e477
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b42a0dbdb817b549b0497392c831fb6
+      internalID: 1789252292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_1
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a462b62e6d64d2648bfa4c6310a4e6b8
+      internalID: 46667661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_2
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c4d1cadb6e3344a9150dfe6c946802
+      internalID: -591950128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_3
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd9f7faa474d8a4980795fd561dd2be
+      internalID: -1249037836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f33e6db639de442a1c2a520604a989
+      internalID: -652867110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_5
+      rect:
+        serializedVersion: 2
+        x: 2421
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7968bd132db3a548a28456c79600aeb
+      internalID: 933682255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_6
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb8965897ff2e2940b31781d8f83fc44
+      internalID: -830788421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_7
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 88
+        width: 368
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd137c02127bf64b8a8fae14ede26aa
+      internalID: -111537615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ec2180571b0fd4aa06a0cfb74d0b29
+      internalID: -2019624686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a09b53e72ab22f4aa876000e2801385
+      internalID: 81681830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_10
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cd805d6470dd64ea7ea9242a508d46
+      internalID: 199534410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeafaa8db3e7bdc47a6af1bafa04f421
+      internalID: -1703288263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_12
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8334a64674e50ec48be39e0966670edd
+      internalID: 1759076297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_13
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190570026c9a4d7449cd721c308a3c60
+      internalID: 1054217804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_14
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ceecc101f58daf49967725e3029d234
+      internalID: -976955935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_15
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ed459f2a01aad4fb8b4e1054fb8c60
+      internalID: 1606137685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_16
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93196df0458e7cd48a7f34bbb289dd5e
+      internalID: 2120794874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_17
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8519f780114f1e94381724e46d655bbd
+      internalID: -896307832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_18
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3da3a2f3d86d3a4fb66f1b1da3683e5
+      internalID: -1411094774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_19
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9600c36b4a04b354dbfb44e4a458ded5
+      internalID: 1175642570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_20
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a5fb2ab07eed247859d7470fe6ab75
+      internalID: 1374089764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_21
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662503ad1ced17645b1bbc135bdfa46d
+      internalID: -1964526933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd79af405e178924fac3076c5529bf45
+      internalID: 480952839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_23
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 824181ded51377e4f882868a95471d92
+      internalID: 1689825183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfeafa1edfb32448a33a6aa596720f8
+      internalID: 1535046595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_25
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92c6d6c4e4727541b71fce20ea1978e
+      internalID: 1865934383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_26
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e76619799172b34ebfb0edf6642da6a
+      internalID: -552353474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_27
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53820bc939c125479472b2a1217e843
+      internalID: 2093784245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_28
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe8e8772ebcd3b418be82a49fc00279
+      internalID: -2139513375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_29
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eafce37c1fde5409743f4eaae220ec
+      internalID: 1745290904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_30
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac73436571e5f594c9baf70fd487d58d
+      internalID: 174187812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_31
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e83133148e34a942b0f002dfed4f65b
+      internalID: -1113944606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_32
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 791ffe6966166be49a812618dbf708f9
+      internalID: -1948721795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_33
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efbee2dcc52509645a06a54eed04265b
+      internalID: -1719679051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_34
+      rect:
+        serializedVersion: 2
+        x: 2125
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697030822434551448114ab898f482c5
+      internalID: 2109126401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_35
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0a2655ef6d4694ebaa9c8406a2e9a3
+      internalID: 1617663134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_36
+      rect:
+        serializedVersion: 2
+        x: 2265
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16e863a551327440bd4ec5be35ef065
+      internalID: -1794578223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_37
+      rect:
+        serializedVersion: 2
+        x: 2293
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2785a8bf52a42774f9f6cd2b9d9cf621
+      internalID: 261148117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_38
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91beb109bfca6714abb6a8f5e8249baf
+      internalID: -126581406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_39
+      rect:
+        serializedVersion: 2
+        x: 2467
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a0e0ebc84a7754c9201875cdc7bb04
+      internalID: 216505190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_40
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 822dc758568e571438f7a7a57c02c2ce
+      internalID: -1337027387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_41
+      rect:
+        serializedVersion: 2
+        x: 2658
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5906b56a3342a14184f79141280e3c9
+      internalID: 1719748168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_42
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c0f1d5a32bf6a46bdaa2ada1a2669c
+      internalID: -1628301204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_43
+      rect:
+        serializedVersion: 2
+        x: 2767
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea6f41542ca5d24487712ae01f67ad0
+      internalID: 2109113618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_44
+      rect:
+        serializedVersion: 2
+        x: 2902
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cf54b9536d85d4aba7d5be4719972f
+      internalID: -796027420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_45
+      rect:
+        serializedVersion: 2
+        x: 2941
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5779041fb6e5f8145bdf0c59bf5c84ff
+      internalID: -408700736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_46
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7353fd99399574f82cb3b68d3d8208
+      internalID: -1026505919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_47
+      rect:
+        serializedVersion: 2
+        x: 3132
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc1d7e07bedb2346a2d32fd0814df65
+      internalID: 2000253411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_48
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5c70d7e8283b44ba6fd11ddaae8c19
+      internalID: -1600876201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_49
+      rect:
+        serializedVersion: 2
+        x: 3241
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d6d8e0cd6b6bf4dbdcaef45c6d63c3
+      internalID: 1349405236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_50
+      rect:
+        serializedVersion: 2
+        x: 3376
+        y: 69
+        width: 26
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4453465b5b085b64f98ebd5b0862da80
+      internalID: 1716154410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_51
+      rect:
+        serializedVersion: 2
+        x: 3415
+        y: 1
+        width: 106
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd978b29353f9f42b836e5ca7554973
+      internalID: 1488227926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_52
+      rect:
+        serializedVersion: 2
+        x: 3547
+        y: 55
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46f0fbb4672e9847bbafbb77e48a99e
+      internalID: 973502943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_53
+      rect:
+        serializedVersion: 2
+        x: 3606
+        y: 0
+        width: 63
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b92ccf4bbb9ed4b89469b1d71f367b
+      internalID: 1458350832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_54
+      rect:
+        serializedVersion: 2
+        x: 3687
+        y: 69
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac25021bee79c04c94d51939238d0cd
+      internalID: -1722533470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_55
+      rect:
+        serializedVersion: 2
+        x: 3715
+        y: 60
+        width: 10
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35111d2111a2e334abb68ab198e7f858
+      internalID: 2077588813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_56
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f5d577c6d731248bda55ddf2b7963d
+      internalID: -435879019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_57
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6286f7d81a55ae148b4c32c6a4ae9d88
+      internalID: 643457589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_58
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9c672c62a29f54abb0afd87dd3dcbe
+      internalID: 1717842457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_59
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5025b9f3fc2c70d458ec9e2d86d7200c
+      internalID: 272331903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_60
+      rect:
+        serializedVersion: 2
+        x: 1003
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af65c06aff9e4c458cbfee37ebe1868
+      internalID: -1945179023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_61
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9f75c0725b92645b9dce89c5889724
+      internalID: 128963610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_62
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a5f1c685e6c17449ec9feeae54c9bf
+      internalID: -354637174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_63
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5f827f8c88f784b80950d56982e07c
+      internalID: 830322727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_64
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1388d65cbd1937445b590f6254662689
+      internalID: 391191642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_65
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2760ff20427b2d5438ac6e75aab31885
+      internalID: 738154683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_66
+      rect:
+        serializedVersion: 2
+        x: 2425
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2347611564e11334b859a4d1d0272197
+      internalID: 1587821926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_67
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf3c4bd5c4e80846b710fa667917e0e
+      internalID: 1580464685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_68
+      rect:
+        serializedVersion: 2
+        x: 2899
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c412022bbabd214ab74b096b3b05151
+      internalID: 155724624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_69
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 051d3df04e8e8c248ab59138958a064f
+      internalID: -816476155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_70
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 55
+        width: 26
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbf4b42ed13e934fbe602af03d91822
+      internalID: -1044283935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_71
+      rect:
+        serializedVersion: 2
+        x: 3682
+        y: 55
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95af820326fd84345acabe3c5efa9075
+      internalID: 1766530915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_72
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08e37dc1c87c224da006922355c1766
+      internalID: -506950964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_73
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c27dc121b234ad48b2ecc6f58aee581
+      internalID: -584978335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_74
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7719e41f99998774e8d77bf7fdf9547d
+      internalID: -1839840565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_75
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5571740991c99784ca3c24c97caf2fd0
+      internalID: -448132749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_76
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff10c35450ccce64394aef6b45dec40b
+      internalID: 1113719389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_77
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c7d10b5d1be2c41aac414ba17028d1
+      internalID: 215757339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_78
+      rect:
+        serializedVersion: 2
+        x: 3067
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ece32884cfa667449ac37c593fda2d4b
+      internalID: -1151678500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WizardNPC-ezgif.com-gif-maker (1) (1)_79
+      rect:
+        serializedVersion: 2
+        x: 3541
+        y: 0
+        width: 65
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0bb6ba30752c747aa9c4296af9838a
+      internalID: 938564358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      WizardNPC-ezgif.com-gif-maker (1) (1)_0: 1789252292
+      WizardNPC-ezgif.com-gif-maker (1) (1)_1: 46667661
+      WizardNPC-ezgif.com-gif-maker (1) (1)_10: 199534410
+      WizardNPC-ezgif.com-gif-maker (1) (1)_11: -1703288263
+      WizardNPC-ezgif.com-gif-maker (1) (1)_12: 1759076297
+      WizardNPC-ezgif.com-gif-maker (1) (1)_13: 1054217804
+      WizardNPC-ezgif.com-gif-maker (1) (1)_14: -976955935
+      WizardNPC-ezgif.com-gif-maker (1) (1)_15: 1606137685
+      WizardNPC-ezgif.com-gif-maker (1) (1)_16: 2120794874
+      WizardNPC-ezgif.com-gif-maker (1) (1)_17: -896307832
+      WizardNPC-ezgif.com-gif-maker (1) (1)_18: -1411094774
+      WizardNPC-ezgif.com-gif-maker (1) (1)_19: 1175642570
+      WizardNPC-ezgif.com-gif-maker (1) (1)_2: -591950128
+      WizardNPC-ezgif.com-gif-maker (1) (1)_20: 1374089764
+      WizardNPC-ezgif.com-gif-maker (1) (1)_21: -1964526933
+      WizardNPC-ezgif.com-gif-maker (1) (1)_22: 480952839
+      WizardNPC-ezgif.com-gif-maker (1) (1)_23: 1689825183
+      WizardNPC-ezgif.com-gif-maker (1) (1)_24: 1535046595
+      WizardNPC-ezgif.com-gif-maker (1) (1)_25: 1865934383
+      WizardNPC-ezgif.com-gif-maker (1) (1)_26: -552353474
+      WizardNPC-ezgif.com-gif-maker (1) (1)_27: 2093784245
+      WizardNPC-ezgif.com-gif-maker (1) (1)_28: -2139513375
+      WizardNPC-ezgif.com-gif-maker (1) (1)_29: 1745290904
+      WizardNPC-ezgif.com-gif-maker (1) (1)_3: -1249037836
+      WizardNPC-ezgif.com-gif-maker (1) (1)_30: 174187812
+      WizardNPC-ezgif.com-gif-maker (1) (1)_31: -1113944606
+      WizardNPC-ezgif.com-gif-maker (1) (1)_32: -1948721795
+      WizardNPC-ezgif.com-gif-maker (1) (1)_33: -1719679051
+      WizardNPC-ezgif.com-gif-maker (1) (1)_34: 2109126401
+      WizardNPC-ezgif.com-gif-maker (1) (1)_35: 1617663134
+      WizardNPC-ezgif.com-gif-maker (1) (1)_36: -1794578223
+      WizardNPC-ezgif.com-gif-maker (1) (1)_37: 261148117
+      WizardNPC-ezgif.com-gif-maker (1) (1)_38: -126581406
+      WizardNPC-ezgif.com-gif-maker (1) (1)_39: 216505190
+      WizardNPC-ezgif.com-gif-maker (1) (1)_4: -652867110
+      WizardNPC-ezgif.com-gif-maker (1) (1)_40: -1337027387
+      WizardNPC-ezgif.com-gif-maker (1) (1)_41: 1719748168
+      WizardNPC-ezgif.com-gif-maker (1) (1)_42: -1628301204
+      WizardNPC-ezgif.com-gif-maker (1) (1)_43: 2109113618
+      WizardNPC-ezgif.com-gif-maker (1) (1)_44: -796027420
+      WizardNPC-ezgif.com-gif-maker (1) (1)_45: -408700736
+      WizardNPC-ezgif.com-gif-maker (1) (1)_46: -1026505919
+      WizardNPC-ezgif.com-gif-maker (1) (1)_47: 2000253411
+      WizardNPC-ezgif.com-gif-maker (1) (1)_48: -1600876201
+      WizardNPC-ezgif.com-gif-maker (1) (1)_49: 1349405236
+      WizardNPC-ezgif.com-gif-maker (1) (1)_5: 933682255
+      WizardNPC-ezgif.com-gif-maker (1) (1)_50: 1716154410
+      WizardNPC-ezgif.com-gif-maker (1) (1)_51: 1488227926
+      WizardNPC-ezgif.com-gif-maker (1) (1)_52: 973502943
+      WizardNPC-ezgif.com-gif-maker (1) (1)_53: 1458350832
+      WizardNPC-ezgif.com-gif-maker (1) (1)_54: -1722533470
+      WizardNPC-ezgif.com-gif-maker (1) (1)_55: 2077588813
+      WizardNPC-ezgif.com-gif-maker (1) (1)_56: -435879019
+      WizardNPC-ezgif.com-gif-maker (1) (1)_57: 643457589
+      WizardNPC-ezgif.com-gif-maker (1) (1)_58: 1717842457
+      WizardNPC-ezgif.com-gif-maker (1) (1)_59: 272331903
+      WizardNPC-ezgif.com-gif-maker (1) (1)_6: -830788421
+      WizardNPC-ezgif.com-gif-maker (1) (1)_60: -1945179023
+      WizardNPC-ezgif.com-gif-maker (1) (1)_61: 128963610
+      WizardNPC-ezgif.com-gif-maker (1) (1)_62: -354637174
+      WizardNPC-ezgif.com-gif-maker (1) (1)_63: 830322727
+      WizardNPC-ezgif.com-gif-maker (1) (1)_64: 391191642
+      WizardNPC-ezgif.com-gif-maker (1) (1)_65: 738154683
+      WizardNPC-ezgif.com-gif-maker (1) (1)_66: 1587821926
+      WizardNPC-ezgif.com-gif-maker (1) (1)_67: 1580464685
+      WizardNPC-ezgif.com-gif-maker (1) (1)_68: 155724624
+      WizardNPC-ezgif.com-gif-maker (1) (1)_69: -816476155
+      WizardNPC-ezgif.com-gif-maker (1) (1)_7: -111537615
+      WizardNPC-ezgif.com-gif-maker (1) (1)_70: -1044283935
+      WizardNPC-ezgif.com-gif-maker (1) (1)_71: 1766530915
+      WizardNPC-ezgif.com-gif-maker (1) (1)_72: -506950964
+      WizardNPC-ezgif.com-gif-maker (1) (1)_73: -584978335
+      WizardNPC-ezgif.com-gif-maker (1) (1)_74: -1839840565
+      WizardNPC-ezgif.com-gif-maker (1) (1)_75: -448132749
+      WizardNPC-ezgif.com-gif-maker (1) (1)_76: 1113719389
+      WizardNPC-ezgif.com-gif-maker (1) (1)_77: 215757339
+      WizardNPC-ezgif.com-gif-maker (1) (1)_78: -1151678500
+      WizardNPC-ezgif.com-gif-maker (1) (1)_79: 938564358
+      WizardNPC-ezgif.com-gif-maker (1) (1)_8: -2019624686
+      WizardNPC-ezgif.com-gif-maker (1) (1)_9: 81681830
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
