@@ -4,10 +4,9 @@ public class PlayerTeleport : MonoBehaviour
 {
     private GameObject currentTeleporter;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             if (currentTeleporter != null)
             {
@@ -18,7 +17,7 @@ public class PlayerTeleport : MonoBehaviour
                 }
             }
         }
-        else if (Input.GetKeyDown(KeyCode.F))
+        else if (Input.GetKeyDown(KeyCode.Z))
         {
             if (currentTeleporter != null)
             {
@@ -37,10 +36,11 @@ public class PlayerTeleport : MonoBehaviour
         {
             currentTeleporter = collision.gameObject;
         }
-        else if (collision.CompareTag("Teleporter2"))
-        {
-            currentTeleporter = collision.gameObject;
-        }
+        // else if (collision.CompareTag("Teleporter2"))
+        // {
+        //     currentTeleporter = collision.gameObject;
+        // }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
