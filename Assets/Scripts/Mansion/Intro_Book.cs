@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class Intro_Book : MonoBehaviour
 {
-    private bool inside2 = false;
-    public GameObject dialogueTrigger;
+    private bool inside = false;
+    public GameObject dialogueTrigger, Chapter1;
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.F) && inside2){
+        if(Input.GetKeyDown(KeyCode.F) && inside){
             dialogueTrigger.SetActive(true);
+            Chapter1.SetActive(true);
+            gameObject.SetActive(false);
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        inside2 = true;
+        inside = true;
     }
 
     private void OnTriggerExit2D(Collider2D other){
-        inside2 = false;
+        inside = false;
     }
 }

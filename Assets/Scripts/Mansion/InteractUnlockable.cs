@@ -20,7 +20,6 @@ public class InteractUnlockable : MonoBehaviour {
     void Update(){
         if(Input.GetKeyDown(KeyCode.F) && inside){
             ((MonoBehaviour)script).enabled = true;
-            Destroy(gameObject);
         }
     }
     private void OnTriggerEnter2D(Collider2D other) {
