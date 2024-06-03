@@ -6,25 +6,25 @@ public class PlayerTeleport : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (currentTeleporter != null)
             {
                 Teleporter teleporter = currentTeleporter.GetComponent<Teleporter>();
                 if (teleporter != null)
                 {
-                    transform.position = teleporter.GetDestination().position;
+                    transform.position = new Vector2(teleporter.GetDestination().position.x, teleporter.GetDestination().position.y - 1f);
                 }
             }
         }
-        else if (Input.GetKeyDown(KeyCode.Z))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             if (currentTeleporter != null)
             {
                 Teleporter2 teleporter = currentTeleporter.GetComponent<Teleporter2>();
                 if (teleporter != null)
                 {
-                    transform.position = teleporter.GetDestination().position;
+                    transform.position = new Vector2(teleporter.GetDestination().position.x, teleporter.GetDestination().position.y - 1f);
                 }
             }
         }
