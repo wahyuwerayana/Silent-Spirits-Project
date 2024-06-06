@@ -81,7 +81,7 @@ public class DialogueManager_Bedroom : MonoBehaviour
 
     IEnumerator changeScene(){
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Chapter1");
+        SceneManager.LoadScene("Dream Start");
     }
 
     void EndDialogue(){
