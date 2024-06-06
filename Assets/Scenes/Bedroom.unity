@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 411266640}
   - component: {fileID: 411266642}
   - component: {fileID: 411266641}
+  - component: {fileID: 411266643}
   m_Layer: 5
   m_Name: Transition
   m_TagString: Untagged
@@ -198,6 +199,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411266639}
   m_CullTransparentMesh: 1
+--- !u!95 &411266643
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411266639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5f544be5c1abc0947aa00c04dd88d8c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &539802353
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,10 +266,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     charNumber:
+    - 
     - Anisa's Mother
     - Anisa
     - Anisa's Mother
     sentences:
+    - At home.
     - Go rest honey, it's already late.
     - Ok Mom, good night.
     - Good night.
@@ -436,6 +460,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameBox: {fileID: 2076324507}
   nextTrigger: {fileID: 0}
+  transition: {fileID: 411266643}
+  counter: 0
   nameText: {fileID: 2076324506}
   dialogueText: {fileID: 2076324508}
   animator: {fileID: 2076324509}
@@ -754,7 +780,7 @@ MonoBehaviour:
       pissed themselves right in front of the gate and ran away all scared."
     - "Well no need to delay myself from an eventful conversation now. \r"
     - The figure decided to enter Anisa's dream to communicate with her.
-  seconds: 5
+  seconds: 12
   nextTrigger: {fileID: 0}
 --- !u!1001 &2076324505
 PrefabInstance:

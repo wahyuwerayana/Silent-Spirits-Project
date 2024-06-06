@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Tracing;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager_Bedroom : MonoBehaviour
 {
     public GameObject nameBox, nextTrigger;
+    public Animator transition;
+    public int counter = 0;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Animator animator;
@@ -75,7 +79,18 @@ public class DialogueManager_Bedroom : MonoBehaviour
         canClick = true;
     }
 
+    IEnumerator changeScene(){
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Chapter1");
+    }
+
     void EndDialogue(){
+        counter++;
+        if(counter == 1){
+            transition.SetTrigger("startTransition");
+        } else if(counter == 2){
+            StartCoroutine("changeScene");
+        }
         animator.SetBool("isOpen", false);
         if(nextTrigger != null)
         nextTrigger.SetActive(true);
