@@ -12,14 +12,14 @@ public class AnswerScript : MonoBehaviour
         if (isCorrect)
         {
             Debug.Log("Correct Answer");
-            
+            quizManager.ReduceEnemyHealth(-25);
             quizManager.correct();
 
         }
         else
         {
             Debug.Log("Wrong Answer");
-            quizManager.ReducePlayerHealth(-10); // Kurangi health player
+            quizManager.ReducePlayerHealth(-25); // Kurangi health player
             quizManager.Wrong();
             
         }

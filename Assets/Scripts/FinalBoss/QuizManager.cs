@@ -13,7 +13,7 @@ public class QuizManager : MonoBehaviour
     public TextMeshProUGUI QuestionTxt;
 
     public HealthBarScript playerHealthBar; // Referensi ke health bar player
-    
+    public HealthBarScript EnemyHealthBar;
 
     private void Start()
     {
@@ -46,6 +46,15 @@ public class QuizManager : MonoBehaviour
         }
     }
 
+    public void ReducePlayerHealth(float amount)
+    {
+        playerHealthBar.UpdateHealth(amount);
+    }
+
+    public void ReduceEnemyHealth(float amount)
+    {
+        EnemyHealthBar.UpdateHealth(amount);
+    }
 
     void generateQuestion()
     {
@@ -63,10 +72,7 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    public void ReducePlayerHealth(float amount)
-    {
-        playerHealthBar.UpdateHealth(amount);
-    }
+    
 
 
 }
