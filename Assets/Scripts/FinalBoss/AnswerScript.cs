@@ -21,8 +21,7 @@ public class AnswerScript : MonoBehaviour
             Debug.Log("Wrong Answer");
             quizManager.ReducePlayerHealth(-25); // Kurangi health player
             quizManager.Wrong();
-            
         }
-
     }
+
 }
