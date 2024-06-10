@@ -7,9 +7,11 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public GameObject nameBox;
+    public PlayerMovement movementScript;
+    public Rigidbody2D rb;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
-    public Animator animator;
+    public Animator animator, movement;
     private bool showWholeSentence = false;
     private bool canClick = true;
     private Queue<string> charName;
@@ -20,8 +22,10 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void StartDialogue(Dialogue dialogue){
+        movementScript.enabled = false;
         animator.SetBool("isOpen", true);
-        
+        rb.velocity = new Vector2(0, 0);
+        movement.SetBool("isWalking", false);
         charName.Clear();
         
         foreach (string name in dialogue.charNumber){
@@ -78,5 +82,6 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue(){
         animator.SetBool("isOpen", false);
+        movementScript.enabled = true;
     }
 }

@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class DialogueManager_Forest : MonoBehaviour
 {
     public int counter = 0;
+    public GameObject fifthDialogue;
     public GameObject nameBox;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
@@ -84,20 +85,26 @@ public class DialogueManager_Forest : MonoBehaviour
         canClick = true;
     }
 
+    IEnumerator fifthTrigger(){
+        yield return new WaitForSeconds(4f);
+        fifthDialogue.SetActive(true);
+    }
     IEnumerator sceneFinish(){
         yield return new WaitForSeconds(2f);
-        SceneManager.LoadScene("Chapter1");
+        SceneManager.LoadScene("Bedroom");
     }
 
     void EndDialogue(){
         counter++;
         animator.SetBool("isOpen", false);
-        if(counter != 4)
+        if(counter < 4)
             player.GetComponent<PlayerMovement>().enabled = true;
         if(counter == 4 || counter == 1){
             transition.SetTrigger("startTransition");
             if(counter == 4)
-                StartCoroutine("sceneFinish");
+            StartCoroutine("fifthTrigger");
         }
+        if(counter == 5)
+            StartCoroutine("sceneFinish");
     }
 }
