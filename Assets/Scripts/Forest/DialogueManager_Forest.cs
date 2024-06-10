@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager_Forest : MonoBehaviour
 {
+    public int counter = 0;
+    public GameObject fifthDialogue;
+    public GameObject nameBox;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Animator animator, movement, transition;
@@ -56,9 +59,16 @@ public class DialogueManager_Forest : MonoBehaviour
             EndDialogue();
             return;
         }
+
         string currName = charName.Dequeue();
         nameText.text = currName;
         string sentence = sentences.Dequeue();
+
+        if(currName.Length == 0){
+            nameBox.SetActive(false);
+        } else if(currName.Length >= 1){
+            nameBox.SetActive(true);
+        }
         
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -75,9 +85,26 @@ public class DialogueManager_Forest : MonoBehaviour
         canClick = true;
     }
 
+    IEnumerator fifthTrigger(){
+        yield return new WaitForSeconds(4f);
+        fifthDialogue.SetActive(true);
+    }
+    IEnumerator sceneFinish(){
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Bedroom");
+    }
+
     void EndDialogue(){
+        counter++;
         animator.SetBool("isOpen", false);
-        player.GetComponent<PlayerMovement>().enabled = true;
-        transition.SetTrigger("startTransition");
+        if(counter < 4)
+            player.GetComponent<PlayerMovement>().enabled = true;
+        if(counter == 4 || counter == 1){
+            transition.SetTrigger("startTransition");
+            if(counter == 4)
+            StartCoroutine("fifthTrigger");
+        }
+        if(counter == 5)
+            StartCoroutine("sceneFinish");
     }
 }

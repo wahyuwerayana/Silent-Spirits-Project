@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class DialogueManager_Beach : MonoBehaviour
 {
+    public GameObject nameBox;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Animator animator, transitionAnimator;
@@ -50,10 +51,17 @@ public class DialogueManager_Beach : MonoBehaviour
             EndDialogue();
             return;
         }
+        
         string currName = charName.Dequeue();
         nameText.text = currName;
         string sentence = sentences.Dequeue();
-        
+
+        if(currName.Length == 0){
+            nameBox.SetActive(false);
+        } else if(currName.Length >= 1){
+            nameBox.SetActive(true);
+        }
+
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
@@ -72,7 +80,7 @@ public class DialogueManager_Beach : MonoBehaviour
     IEnumerator waitTransition(){
         yield return new WaitForSeconds(.5f);
         transitionAnimator.SetTrigger("startTransition");
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Forest");
     }
 

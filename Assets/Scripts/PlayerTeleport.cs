@@ -4,28 +4,27 @@ public class PlayerTeleport : MonoBehaviour
 {
     private GameObject currentTeleporter;
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.F))
         {
             if (currentTeleporter != null)
             {
                 Teleporter teleporter = currentTeleporter.GetComponent<Teleporter>();
                 if (teleporter != null)
                 {
-                    transform.position = teleporter.GetDestination().position;
+                    transform.position = new Vector2(teleporter.GetDestination().position.x, teleporter.GetDestination().position.y - 1f);
                 }
             }
         }
-        else if (Input.GetKeyDown(KeyCode.F))
+        else if (Input.GetKeyDown(KeyCode.E))
         {
             if (currentTeleporter != null)
             {
                 Teleporter2 teleporter = currentTeleporter.GetComponent<Teleporter2>();
                 if (teleporter != null)
                 {
-                    transform.position = teleporter.GetDestination().position;
+                    transform.position = new Vector2(teleporter.GetDestination().position.x, teleporter.GetDestination().position.y - 1f);
                 }
             }
         }
@@ -37,10 +36,11 @@ public class PlayerTeleport : MonoBehaviour
         {
             currentTeleporter = collision.gameObject;
         }
-        else if (collision.CompareTag("Teleporter2"))
-        {
-            currentTeleporter = collision.gameObject;
-        }
+        // else if (collision.CompareTag("Teleporter2"))
+        // {
+        //     currentTeleporter = collision.gameObject;
+        // }
+        
     }
 
     private void OnTriggerExit2D(Collider2D collision)
