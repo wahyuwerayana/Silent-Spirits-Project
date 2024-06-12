@@ -15,6 +15,9 @@ public class QuizManager : MonoBehaviour
     public HealthBarScript playerHealthBar; // Referensi ke health bar player
     public HealthBarScript EnemyHealthBar;
 
+    private Animator anim;
+    
+
     private void Start()
     {
         generateQuestion();
@@ -29,7 +32,9 @@ public class QuizManager : MonoBehaviour
 
     public void Wrong()
     {
+        anim.SetBool("BossAttack", true);
         QnA.RemoveAt(currentQuestion);
+        anim.SetBool("BossAttack", false);
         generateQuestion();
     }
     void SetAnswers()
