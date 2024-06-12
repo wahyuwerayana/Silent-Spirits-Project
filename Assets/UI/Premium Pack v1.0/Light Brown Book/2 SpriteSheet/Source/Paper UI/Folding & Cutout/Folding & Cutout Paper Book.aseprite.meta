@@ -1,0 +1,755 @@
+fileFormatVersion: 2
+guid: 46f710fdab722fa4cb2d922575a22aad
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Folding & Cutout Paper Book_Frame_0
+    originalName: 
+    pivot: {x: 0.50445986, y: -0.081172496}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 4036
+      height: 1774
+    spriteID: 8ad830ff39259154f9a4a558755a8a8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Folding & Cutout Paper Book_Frame_1
+    originalName: 
+    pivot: {x: 0.5039683, y: -0.08256881}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1786
+      width: 4032
+      height: 1744
+    spriteID: 29bfbe1fec735784691c62120b3c6ec5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1786}
+  - name: Folding & Cutout Paper Book_Frame_2
+    originalName: 
+    pivot: {x: 0.6517116, y: -0.40224716}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 7593
+      width: 3009
+      height: 445
+    spriteID: 8d351c41ff018b74dae3b0223a026f50
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 7593}
+  - name: Folding & Cutout Paper Book_Frame_3
+    originalName: 
+    pivot: {x: 0.7347528, y: -0.5282869}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 5422
+      width: 2771
+      height: 1255
+    spriteID: cce0d5315e873134e9065513e034c168
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 5422}
+  - name: Folding & Cutout Paper Book_Frame_4
+    originalName: 
+    pivot: {x: 0.5081967, y: -0.93220335}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 3538
+      width: 3904
+      height: 944
+    spriteID: da38137854cd24047accde24f87309bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3538}
+  - name: Folding & Cutout Paper Book_Frame_5
+    originalName: 
+    pivot: {x: 0.5082389, y: -0.96320355}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4490
+      width: 3884
+      height: 924
+    spriteID: b0bbbbe81f5653b4a8ec305ded1b51e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4490}
+  - name: Folding & Cutout Paper Book_Frame_6
+    originalName: 
+    pivot: {x: 0.50972646, y: -0.9600432}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 2574
+      width: 3290
+      height: 926
+    spriteID: 1fe9fe97502d6794b82cc9a07919a762
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 2574}
+  - name: Folding & Cutout Paper Book_Frame_7
+    originalName: 
+    pivot: {x: 0.5083333, y: -1.1994644}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 3508
+      width: 3840
+      height: 747
+    spriteID: 7a8a91127a714f34f8e828741af62041
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 3508}
+  - name: Folding & Cutout Paper Book_Frame_8
+    originalName: 
+    pivot: {x: 0.50674975, y: -1.0442891}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 4
+      width: 3852
+      height: 858
+    spriteID: 5a87c77e6ccadbd4a89a6f446d6b3358
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 4}
+  - name: Folding & Cutout Paper Book_Frame_9
+    originalName: 
+    pivot: {x: 0.50840884, y: -1.0749108}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 870
+      width: 3865
+      height: 841
+    spriteID: d432d9251ae47494eb9f6520dcd61548
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 870}
+  - name: Folding & Cutout Paper Book_Frame_10
+    originalName: 
+    pivot: {x: 0.6035344, y: -1.2718955}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 6639
+      width: 2603
+      height: 765
+    spriteID: 164e1d30888291e40a5d38f82fe21c8b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 6639}
+  - name: Folding & Cutout Paper Book_Frame_11
+    originalName: 
+    pivot: {x: 6.666667, y: -17.139786}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7896
+      y: 3508
+      width: 111
+      height: 93
+    spriteID: d6e6554f25c959d4bad65e15d634b8ef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7896, y: 3508}
+  - name: Folding & Cutout Paper Book_Frame_12
+    originalName: 
+    pivot: {x: 0.5388229, y: -1.0543094}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 1719
+      width: 3619
+      height: 847
+    spriteID: 04e1003e43db90c4699af82078986f66
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 1719}
+  - name: Folding & Cutout Paper Book_Frame_13
+    originalName: 
+    pivot: {x: 0.5159672, y: -9.188236}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 7412
+      width: 2192
+      height: 170
+    spriteID: e7c96283d2f23b144878b91bb0eba0bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 7412}
+  - name: Folding & Cutout Paper Book_Frame_14
+    originalName: 
+    pivot: {x: 0.3626723, y: -1.154321}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 5821
+      width: 2829
+      height: 810
+    spriteID: ed58681786eae074ca8e56693905615b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 5821}
+  - name: Folding & Cutout Paper Book_Frame_15
+    originalName: 
+    pivot: {x: 0.5070829, y: -1.0066667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6685
+      width: 3812
+      height: 900
+    spriteID: ec7b28827925065409d40703fcbb1bde
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 6685}
+  - name: Folding & Cutout Paper Book_Frame_16
+    originalName: 
+    pivot: {x: 17.62712, y: -24.813559}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7896
+      y: 3692
+      width: 59
+      height: 59
+    spriteID: 24573933e3533354088ef393650310ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7896, y: 3692}
+  - name: Folding & Cutout Paper Book_Frame_17
+    originalName: 
+    pivot: {x: 44.43478, y: -64.608696}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7963
+      y: 3692
+      width: 23
+      height: 23
+    spriteID: 8dce9481438836a42a4f94278792c1b7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7963, y: 3692}
+  - name: Folding & Cutout Paper Book_Frame_18
+    originalName: 
+    pivot: {x: 16.296875, y: -82.22222}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7896
+      y: 3759
+      width: 64
+      height: 18
+    spriteID: b6b035e24fa33884d8f367aa6d4eea3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7896, y: 3759}
+  - name: Folding & Cutout Paper Book_Frame_19
+    originalName: 
+    pivot: {x: 13.973333, y: -19.413332}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 7896
+      y: 3609
+      width: 75
+      height: 75
+    spriteID: c486b049704ee0149a342d8cd77f8908
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7896, y: 3609}
+  - name: Folding & Cutout Paper Book_Frame_20
+    originalName: 
+    pivot: {x: 0.40653357, y: -1.2680411}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 4263
+      width: 3306
+      height: 776
+    spriteID: 25edb7ce3fefa6f4fa4ddab8c8264ab4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 4263}
+  - name: Folding & Cutout Paper Book_Frame_21
+    originalName: 
+    pivot: {x: 0.40619308, y: -1.2911228}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4048
+      y: 5047
+      width: 3294
+      height: 766
+    spriteID: 43b9a80c1dccb174b90cea5ba872f8ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4048, y: 5047}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 2110433266
+    name: Folding & Cutout Paper Book
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Folding & Cutout Paper Book_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 76
+        y: 144
+        width: 4036
+        height: 1774
+      spriteId: 8ad830ff39259154f9a4a558755a8a8b
+    - name: Folding & Cutout Paper Book_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 80
+        y: 144
+        width: 4032
+        height: 1744
+      spriteId: 29bfbe1fec735784691c62120b3c6ec5
+    - name: Folding & Cutout Paper Book_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 151
+        y: 179
+        width: 3009
+        height: 445
+      spriteId: 8d351c41ff018b74dae3b0223a026f50
+    - name: Folding & Cutout Paper Book_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 76
+        y: 663
+        width: 2771
+        height: 1255
+      spriteId: cce0d5315e873134e9065513e034c168
+    - name: Folding & Cutout Paper Book_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 128
+        y: 880
+        width: 3904
+        height: 944
+      spriteId: da38137854cd24047accde24f87309bf
+    - name: Folding & Cutout Paper Book_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 138
+        y: 890
+        width: 3884
+        height: 924
+      spriteId: b0bbbbe81f5653b4a8ec305ded1b51e4
+    - name: Folding & Cutout Paper Book_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 435
+        y: 889
+        width: 3290
+        height: 926
+      spriteId: 1fe9fe97502d6794b82cc9a07919a762
+    - name: Folding & Cutout Paper Book_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 160
+        y: 896
+        width: 3840
+        height: 747
+      spriteId: 7a8a91127a714f34f8e828741af62041
+    - name: Folding & Cutout Paper Book_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 160
+        y: 896
+        width: 3852
+        height: 858
+      spriteId: 5a87c77e6ccadbd4a89a6f446d6b3358
+    - name: Folding & Cutout Paper Book_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 147
+        y: 904
+        width: 3865
+        height: 841
+      spriteId: d432d9251ae47494eb9f6520dcd61548
+    - name: Folding & Cutout Paper Book_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 541
+        y: 973
+        width: 2603
+        height: 765
+      spriteId: 164e1d30888291e40a5d38f82fe21c8b
+    - name: Folding & Cutout Paper Book_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 1372
+        y: 1594
+        width: 111
+        height: 93
+      spriteId: d6e6554f25c959d4bad65e15d634b8ef
+    - name: Folding & Cutout Paper Book_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 162
+        y: 893
+        width: 3619
+        height: 847
+      spriteId: 04e1003e43db90c4699af82078986f66
+    - name: Folding & Cutout Paper Book_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 981
+        y: 1562
+        width: 2192
+        height: 170
+      spriteId: e7c96283d2f23b144878b91bb0eba0bd
+    - name: Folding & Cutout Paper Book_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 1086
+        y: 935
+        width: 2829
+        height: 810
+      spriteId: ed58681786eae074ca8e56693905615b
+    - name: Folding & Cutout Paper Book_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 179
+        y: 906
+        width: 3812
+        height: 900
+      spriteId: ec7b28827925065409d40703fcbb1bde
+    - name: Folding & Cutout Paper Book_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 1072
+        y: 1464
+        width: 59
+        height: 59
+      spriteId: 24573933e3533354088ef393650310ac
+    - name: Folding & Cutout Paper Book_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 1090
+        y: 1486
+        width: 23
+        height: 23
+      spriteId: 8dce9481438836a42a4f94278792c1b7
+    - name: Folding & Cutout Paper Book_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 1069
+        y: 1480
+        width: 64
+        height: 18
+      spriteId: b6b035e24fa33884d8f367aa6d4eea3f
+    - name: Folding & Cutout Paper Book_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 1064
+        y: 1456
+        width: 75
+        height: 75
+      spriteId: c486b049704ee0149a342d8cd77f8908
+    - name: Folding & Cutout Paper Book_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 768
+        y: 984
+        width: 3306
+        height: 776
+      spriteId: 25edb7ce3fefa6f4fa4ddab8c8264ab4
+    - name: Folding & Cutout Paper Book_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 774
+        y: 989
+        width: 3294
+        height: 766
+      spriteId: 43b9a80c1dccb174b90cea5ba872f8ed
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 4224, y: 2016}
