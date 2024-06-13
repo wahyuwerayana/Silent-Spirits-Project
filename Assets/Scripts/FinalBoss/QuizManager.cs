@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class QuizManager : MonoBehaviour
 {
     public List<QuestionAndAnswers> QnA;
     public GameObject[] options;
     public int currentQuestion;
-    public TextMeshProUGUI QuestionTxt;
+    public Image QuestionImage;
 
     public HealthBarScript playerHealthBar;
     public HealthBarScript EnemyHealthBar;
@@ -112,7 +113,7 @@ public class QuizManager : MonoBehaviour
         if (QnA.Count > 0)
         {
             currentQuestion = Random.Range(0, QnA.Count);
-            QuestionTxt.text = QnA[currentQuestion].Question;
+            QuestionImage.sprite = QnA[currentQuestion].Question;
             SetAnswers();
         }
         else
