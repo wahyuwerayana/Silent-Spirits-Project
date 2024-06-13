@@ -6,20 +6,36 @@ public class DialogueTrigger_MansionSpecial : MonoBehaviour
 {
     public Dialogue dialogue;
     public BoxCollider2D dialogueCollider;
-    public Color alpha;
+    public SpriteRenderer spriteRenderer, pants, shirt, boots, hair;
+    public PlayerMovement movementScript;
+    public Rigidbody2D rb;
+    public Animator movement;
+    public int targetNumber;
     
     void Start(){
         dialogueCollider = GetComponent<BoxCollider2D>();
-        alpha = GetComponent<SpriteRenderer>().color;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void TriggerDialogue(){
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager_Mansion>().StartDialogue(dialogue);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        alpha.a = 255;
-        TriggerDialogue();
+        spriteRenderer.color = new Color(1, 1, 1, 255);
+        pants.color = new Color(1, 1, 1, 255);
+        shirt.color = new Color(1, 1, 1, 255);
+        boots.color = new Color(1, 1, 1, 255);
+        hair.color = new Color(1, 1, 1, 255);
         dialogueCollider.enabled = false;
+        movementScript.enabled = false;
+        rb.velocity = new Vector2(0, 0);
+        movement.SetBool("isWalking", false);
+        StartCoroutine("delay");
+    }
+
+    IEnumerator delay(){
+        yield return new WaitForSeconds(1f);
+        TriggerDialogue();
     }
 }

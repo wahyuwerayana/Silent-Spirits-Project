@@ -6,4 +6,5 @@ public interface Iinventory
 {
     int Item {  get; set; }
     int Prizee { get; set; }
+    bool Sword { get; set; }
 }

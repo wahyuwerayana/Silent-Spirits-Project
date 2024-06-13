@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Teleporter
   - NPC
+  - Special Dialogue
+  - Sword
   layers:
   - Default
   - TransparentFX
