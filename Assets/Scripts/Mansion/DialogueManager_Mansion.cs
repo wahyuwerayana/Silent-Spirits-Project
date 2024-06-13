@@ -8,9 +8,12 @@ using UnityEngine.UI;
 public class DialogueManager_Mansion : MonoBehaviour
 {
     public int counter;
-    public GameObject nameBox, prepTime, code;
+    public float xVal, yVal;
+    public GameObject nameBox, prepTime, code, gameManager, virtualCamera, player;
     public PlayerMovement movementScript;
+    public PlayerTeleport teleportScript;
     public DialogueTrigger_MansionSpecial dtMansionScr;
+    public EnemyAI ambrose;
     public Rigidbody2D rb;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
@@ -75,20 +78,23 @@ public class DialogueManager_Mansion : MonoBehaviour
         string currName = charName.Dequeue();
         nameText.text = currName;
         string sentence = sentences.Dequeue();
-        
+
+        if(currGameObject != null){
+            if(currGameObject.name == "After Combat"){
+                ambrose.enabled = false;
+                ambrose.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+                ambrose.GetComponent<Animator>().SetBool("isWalking", false);
+                if(counter == 7)
+                    code.SetActive(true);
+                else
+                    code.SetActive(false);
+            }
+        }
+
         if(IsSpawnings != null){
             bool Spawn = IsSpawnings.Dequeue();
             if(Spawn){
                 GameObject barang= Instantiate(Weapon,Posisi);
-            }
-        }
-
-        if(currGameObject != null){
-            if(currGameObject.name == "After Combat"){
-                if(counter == 6)
-                    code.SetActive(true);
-                else
-                    code.SetActive(false);
             }
         }
 
@@ -118,10 +124,32 @@ public class DialogueManager_Mansion : MonoBehaviour
         movementScript.enabled = true;
         if(prepTime.activeSelf == false && currGameObject.name == "Preparation Time"){
             meleeScript.enabled = true;
+            ambrose.enabled = true;
+        } else if(currGameObject.name == "After Combat"){
+            teleportScript.enabled = true;
+        } else if(currGameObject.name == "Arriving at the attic"){
+            movementScript.enabled = false;
+            StartCoroutine("intheothercorner");
+        } else if(currGameObject.name == "In the other corner"){
+            virtualCamera.SetActive(true);
         }
     }
 
     public void setGameobject(GameObject goName){
         currGameObject = goName;
+    }
+
+    public void setCamLoc(float x, float y){
+        xVal = x;
+        yVal = y;
+    }
+
+    IEnumerator intheothercorner(){
+        yield return new WaitForSeconds(2f);
+        gameManager.GetComponent<CameraMove>().MoveCamera(xVal, yVal);
+        GameObject intheothercorner = GameObject.Find("In the other corner");
+        yield return new WaitForSeconds(3f);
+        intheothercorner.GetComponent<DialogueTrigger>().TriggerDialogue();
+        player.transform.position = new Vector2(player.transform.position.x - 6, player.transform.position.y);
     }
 }

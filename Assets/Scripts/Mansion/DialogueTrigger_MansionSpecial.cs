@@ -6,7 +6,7 @@ public class DialogueTrigger_MansionSpecial : MonoBehaviour
 {
     public Dialogue dialogue;
     public BoxCollider2D dialogueCollider;
-    public SpriteRenderer spriteRenderer, pants, shirt, boots, hair;
+    public SpriteRenderer spriteRenderer, pants, shirt, boots, hair, sword;
     public PlayerMovement movementScript;
     public Rigidbody2D rb;
     public Animator movement;
@@ -29,6 +29,7 @@ public class DialogueTrigger_MansionSpecial : MonoBehaviour
             shirt.color = new Color(1, 1, 1, 255);
             boots.color = new Color(1, 1, 1, 255);
             hair.color = new Color(1, 1, 1, 255);
+            sword.color = new Color(1, 1, 1, 255);
             dialogueCollider.enabled = false;
             movementScript.enabled = false;
             rb.velocity = new Vector2(0, 0);
