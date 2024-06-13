@@ -2,21 +2,48 @@ using UnityEngine;
 
 public class QuizTrigger : MonoBehaviour
 {
-    public GameObject quizCanvas; 
-    private void OnTriggerEnter2D(Collider2D other)
+    public GameObject quizCanvas;
+    private GameObject player;
+    private PlayerMovement playerMovement;
+    private Rigidbody2D rb;
+    private Animator playerAnimator;
+
+    private void Start()
     {
-        // Cek apakah yang memasuki trigger adalah pemain
-        if (other.CompareTag("Player"))
+        player = GameObject.FindWithTag("Player"); 
+        if (player != null)
         {
-           quizCanvas.SetActive(true);
-           Debug.Log("Quiz Canvas is now active.");
-           
+            playerMovement = player.GetComponent<PlayerMovement>();
+            rb = player.GetComponent<Rigidbody2D>();
+            playerAnimator = player.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.LogError("Player object not found!");
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Cek apakah yang keluar dari trigger adalah pemain
+        
+        if (other.CompareTag("Player"))
+        {
+            quizCanvas.SetActive(true);
+            if (playerMovement != null)
+            {
+                playerMovement.enabled = false;
+                rb.velocity = Vector2.zero;
+                playerAnimator.SetBool("isWalking", false);
+                Debug.Log("Quiz Canvas is now active and PlayerMovement script is disabled.");
+            }
+        }
+    }
+}
+
+
+    /*private void OnTriggerExit2 D(Collider2D other)
+    {
+       
         if (other.CompareTag("Player"))
         {
             // Sembunyikan canvas quiz
@@ -26,5 +53,5 @@ public class QuizTrigger : MonoBehaviour
                 Debug.Log("Quiz Canvas is now inactive.");
             }
         }
-    }
-}
+    }*/
+

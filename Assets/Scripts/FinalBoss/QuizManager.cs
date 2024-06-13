@@ -2,41 +2,87 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuizManager : MonoBehaviour
 {
     public List<QuestionAndAnswers> QnA;
     public GameObject[] options;
     public int currentQuestion;
-
     public TextMeshProUGUI QuestionTxt;
 
-    public HealthBarScript playerHealthBar; // Referensi ke health bar player
+    public HealthBarScript playerHealthBar;
     public HealthBarScript EnemyHealthBar;
-
-    private Animator anim;
-    
+    public GameObject quizCanvas;
+    [SerializeField] GameObject _CanvasTrigger;
+    [SerializeField] Animator Boss;
+    [SerializeField] GameObject bossGameObject;
+    [SerializeField] float bossDieAnimationDuration = 2f;
 
     private void Start()
     {
+        playerHealthBar.OnHealthZero += OnPlayerHealthZero;
+        EnemyHealthBar.OnHealthZero += OnEnemyHealthZero;
+
         generateQuestion();
+    }
+
+    private void OnDestroy()
+    {
+        playerHealthBar.OnHealthZero -= OnPlayerHealthZero;
+        EnemyHealthBar.OnHealthZero -= OnEnemyHealthZero;
+    }
+
+    private void OnPlayerHealthZero()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void OnEnemyHealthZero()
+    {
+        quizCanvas.SetActive(false);
+        _CanvasTrigger.SetActive(false);
+
+        var playerMovement = GameObject.FindWithTag("Player").GetComponent<PlayerMovement>();
+        if (playerMovement != null)
+        {
+            playerMovement.enabled = true;
+        }
+
+        if (Boss != null)
+        {
+            Boss.SetTrigger("Die");
+            StartCoroutine(DestroyBossAfterAnimation());
+        }
+        
+    }
+
+    private IEnumerator DestroyBossAfterAnimation()
+    {
+        yield return new WaitForSeconds(bossDieAnimationDuration);
+        Destroy(bossGameObject);
     }
 
     public void correct()
     {
+        if (Boss != null)
+        {
+            Boss.SetTrigger("Hurt"); 
+        }
         QnA.RemoveAt(currentQuestion);
         generateQuestion();
-
     }
 
     public void Wrong()
     {
-        anim.SetBool("BossAttack", true);
+        if (Boss != null)
+        {
+            Boss.SetTrigger("Attack");
+        }
         QnA.RemoveAt(currentQuestion);
-        anim.SetBool("BossAttack", false);
         generateQuestion();
     }
+
     void SetAnswers()
     {
         for (int i = 0; i < options.Length; i++)
@@ -44,9 +90,9 @@ public class QuizManager : MonoBehaviour
             options[i].GetComponent<AnswerScript>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = QnA[currentQuestion].Answers[i];
 
-            if (QnA[currentQuestion].CorrectAnswer == i+1)
+            if (QnA[currentQuestion].CorrectAnswer == i + 1)
             {
-                options[i].GetComponent <AnswerScript>().isCorrect = true;
+                options[i].GetComponent<AnswerScript>().isCorrect = true;
             }
         }
     }
@@ -63,21 +109,15 @@ public class QuizManager : MonoBehaviour
 
     void generateQuestion()
     {
-        if(QnA.Count > 0)
+        if (QnA.Count > 0)
         {
             currentQuestion = Random.Range(0, QnA.Count);
-
             QuestionTxt.text = QnA[currentQuestion].Question;
             SetAnswers();
-
         }
         else
         {
             Debug.Log("Out of Question");
         }
     }
-
-    
-
-
 }
