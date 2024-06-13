@@ -7,37 +7,31 @@ using UnityEngine.UI;
 
 public class DialogueManager_Mansion : MonoBehaviour
 {
-
-    public bool needCounter;
-    public GameObject nameBox;
+    public int counter;
+    public GameObject nameBox, prepTime, code;
     public PlayerMovement movementScript;
     public DialogueTrigger_MansionSpecial dtMansionScr;
     public Rigidbody2D rb;
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     public Animator animator, movement;
-
     public GameObject Weapon;
     public Transform Posisi;
     private bool showWholeSentence = false;
     private bool canClick = true;
     private Queue<string> charName;
     private Queue<string> sentences;
-
+    public PlayerMelee meleeScript;
     private Queue<bool> IsSpawnings = new Queue<bool>();
-    public int counter, targetNumber;
+    [Header("Current Game Object Active")]
+    public GameObject currGameObject;
     void Start(){
         sentences = new Queue<string>();
         charName = new Queue<string>();
     }
 
     public void StartDialogue(Dialogue dialogue){
-        
-        // needCounter = dtMansionScr.needCounter;
-        // if(needCounter){
-        //     targetNumber = dtMansionScr.targetNumber;
-        //     counter = 0;
-        // }
+        counter = 0;
         movementScript.enabled = false;
         animator.SetBool("isOpen", true);
         rb.velocity = new Vector2(0, 0);
@@ -70,6 +64,7 @@ public class DialogueManager_Mansion : MonoBehaviour
             return;
         } else if(canClick){
             canClick = false;
+            counter++;
         }
         if(sentences.Count == 0){
             canClick = true;
@@ -85,6 +80,15 @@ public class DialogueManager_Mansion : MonoBehaviour
             bool Spawn = IsSpawnings.Dequeue();
             if(Spawn){
                 GameObject barang= Instantiate(Weapon,Posisi);
+            }
+        }
+
+        if(currGameObject != null){
+            if(currGameObject.name == "After Combat"){
+                if(counter == 6)
+                    code.SetActive(true);
+                else
+                    code.SetActive(false);
             }
         }
 
@@ -112,5 +116,12 @@ public class DialogueManager_Mansion : MonoBehaviour
     void EndDialogue(){
         animator.SetBool("isOpen", false);
         movementScript.enabled = true;
+        if(prepTime.activeSelf == false && currGameObject.name == "Preparation Time"){
+            meleeScript.enabled = true;
+        }
+    }
+
+    public void setGameobject(GameObject goName){
+        currGameObject = goName;
     }
 }

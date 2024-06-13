@@ -19,19 +19,22 @@ public class DialogueTrigger_MansionSpecial : MonoBehaviour
 
     public void TriggerDialogue(){
         FindObjectOfType<DialogueManager_Mansion>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManager_Mansion>().setGameobject(gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        spriteRenderer.color = new Color(1, 1, 1, 255);
-        pants.color = new Color(1, 1, 1, 255);
-        shirt.color = new Color(1, 1, 1, 255);
-        boots.color = new Color(1, 1, 1, 255);
-        hair.color = new Color(1, 1, 1, 255);
-        dialogueCollider.enabled = false;
-        movementScript.enabled = false;
-        rb.velocity = new Vector2(0, 0);
-        movement.SetBool("isWalking", false);
-        StartCoroutine("delay");
+        if(other.CompareTag("Player")){
+            spriteRenderer.color = new Color(1, 1, 1, 255);
+            pants.color = new Color(1, 1, 1, 255);
+            shirt.color = new Color(1, 1, 1, 255);
+            boots.color = new Color(1, 1, 1, 255);
+            hair.color = new Color(1, 1, 1, 255);
+            dialogueCollider.enabled = false;
+            movementScript.enabled = false;
+            rb.velocity = new Vector2(0, 0);
+            movement.SetBool("isWalking", false);
+            StartCoroutine("delay");
+        }
     }
 
     IEnumerator delay(){
