@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Intro_Book : MonoBehaviour
 {
+    public GameObject quizCanvas;
     private bool inside = false;
     public GameObject dialogueTrigger, Chapter1;
     public PlayerTeleport teleportScript;
@@ -18,9 +19,11 @@ public class Intro_Book : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) {
         inside = true;
+        quizCanvas.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other){
         inside = false;
+        quizCanvas.SetActive(false);
     }
 }

@@ -7,6 +7,7 @@ public class InteractDialogue : MonoBehaviour
     public bool onrange = false;
     public GameObject dialogueTrigger;
     public DialogueTrigger requirement;
+    public GameObject quizCanvas;
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.F)){
@@ -18,13 +19,23 @@ public class InteractDialogue : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(other.CompareTag("Player"))
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
             onrange = true;
+            quizCanvas.SetActive(true);
+        }
+        
+
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player"))
+        {
             onrange = false;
+            quizCanvas.SetActive(false);
+        }
+
     }
 }

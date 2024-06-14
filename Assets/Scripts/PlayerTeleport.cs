@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerTeleport : MonoBehaviour
 {
+    
     private GameObject currentTeleporter;
 
     void Update()
