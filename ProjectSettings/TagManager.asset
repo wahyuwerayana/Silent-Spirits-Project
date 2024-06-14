@@ -6,15 +6,17 @@ TagManager:
   tags:
   - Teleporter
   - NPC
+  - Special Dialogue
+  - Sword
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - Ground
-  - 
+  - Enemies
   - 
   - 
   - 

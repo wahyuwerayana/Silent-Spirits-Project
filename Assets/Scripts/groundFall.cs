@@ -10,11 +10,13 @@ public class GroundFall : MonoBehaviour
         rb.isKinematic = true; 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            rb.isKinematic = false; 
+        if(this.enabled == true){
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                rb.isKinematic = false; 
+            }
         }
     }
 }

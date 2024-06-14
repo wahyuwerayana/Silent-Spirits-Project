@@ -6,6 +6,7 @@ public class SIBIOverlay : MonoBehaviour
 {
     public GameObject SIBI;
     public PlayerMovement moveScript;
+    public Animator animator;
 
     void Start(){
         enableOverlay();
@@ -20,14 +21,21 @@ public class SIBIOverlay : MonoBehaviour
     }
 
     public void disableOverlay(){
-            Time.timeScale = 1;
-            moveScript.enabled = true;
-            SIBI.SetActive(false);
+        animator.SetBool("isOpened", false);
+        StartCoroutine("closeBook");  
+        moveScript.enabled = true;  
     }
 
     public void enableOverlay(){
         Time.timeScale = 0;
         moveScript.enabled = false;
         SIBI.SetActive(true);
+        animator.SetBool("isOpened", true);
+    }
+
+    IEnumerator closeBook(){
+        Time.timeScale = 1;
+        yield return new WaitForSeconds(0.2f);
+        SIBI.SetActive(false);
     }
 }

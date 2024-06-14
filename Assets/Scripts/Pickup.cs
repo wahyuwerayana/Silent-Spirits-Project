@@ -5,14 +5,18 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     public int ItemValue = 1;
-    private bool canPickup = false; 
+    private bool canPickup = false;
+    public GameObject prepTime;
 
     private void Update()
     {
-     
         if (canPickup && Input.GetKeyDown(KeyCode.G))
         {
-            PickItem();
+            if(gameObject.tag == "Sword"){
+                pickSword();
+            } else{
+                PickItem();
+            }
         }
     }
 
@@ -40,6 +44,18 @@ public class Pickup : MonoBehaviour
         {
             inventory.Item += ItemValue;
             print("Player inventory has " + inventory.Item + " item(s) in it.");
+            gameObject.SetActive(false);
+        }
+    }
+
+    private void pickSword(){
+        Iinventory inventory = FindObjectOfType<PlayerInventory>();
+
+        if(inventory != null){
+            inventory.Sword = true;
+            prepTime = GameObject.Find("Preparation Time");
+            DialogueTrigger prepTimeScript = prepTime.GetComponent<DialogueTrigger>();
+            prepTimeScript.TriggerDialogue();
             gameObject.SetActive(false);
         }
     }

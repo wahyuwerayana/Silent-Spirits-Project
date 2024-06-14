@@ -20,5 +20,7 @@ public class PlayerInventory : MonoBehaviour, Iinventory
     public int Prizee { get => prizee; set => prizee = value; }
 
     public int prizee = 0;
+    public bool Sword{get => sword; set => sword = true;}
+    public bool sword = false;
 
 }
