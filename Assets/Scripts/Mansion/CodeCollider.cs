@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CodeCollider : MonoBehaviour
 {
-    public GameObject codeEnterUI;
+    public GameObject codeEnterUI, canvasButton;
     private bool onRange = false;
 
     void Update(){
@@ -18,12 +18,14 @@ public class CodeCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.CompareTag("Player")){
             onRange = true;
+            canvasButton.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other) {
         if(other.CompareTag("Player")){
             onRange = false;
+            canvasButton.SetActive(false);
         }
     }
 }

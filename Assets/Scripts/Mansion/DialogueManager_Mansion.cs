@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class DialogueManager_Mansion : MonoBehaviour
 {
+    public TMP_Text objectiveText;
     public int counter;
     public float xVal, yVal;
     public GameObject nameBox, prepTime, code, gameManager, virtualCamera, player;
@@ -130,18 +131,26 @@ public class DialogueManager_Mansion : MonoBehaviour
             chapter1.volume = 0.2f;
             chapter1.loop = true;
             chapter1.Play();
+        } else if(currGameObject.name == "After Getting Book"){
+            objectiveText.text = "Objective: Go to the master bedroom";
+        } else if(currGameObject.name == "In the bedroom"){
+            objectiveText.text = "Objective: Investigate Bedroom";
         } else if(prepTime.activeSelf == false && currGameObject.name == "Preparation Time"){
+            objectiveText.text = "Objective: Defeat Ambrose";
             meleeScript.enabled = true;
             ambrose.enabled = true;
             ambrose.GetComponent<AmbroseDie>().enabled = true;
         } else if(currGameObject.name == "After Combat"){
+            objectiveText.text="Objective: Leave Bedroom";
             teleportScript.enabled = true;
         } else if(currGameObject.name == "Prologue Chapter 2"){
+            objectiveText.text="Objective: Go to the Attic";
             prechapter2.volume = 0.2f;
             prechapter2.loop = false;
             chapter1.Stop();
             prechapter2.Play();
         } else if(currGameObject.name == "Arriving at the attic"){
+            objectiveText.text = "Objective: Investigate Attic";
             chapter2.volume = 0.2f;
             chapter2.loop = true;
             prechapter2.Stop();
@@ -154,6 +163,7 @@ public class DialogueManager_Mansion : MonoBehaviour
         } else if(currGameObject.name == "Meanwhile on the entrance 1"){
             entrance2.SetActive(true);
         } else if(currGameObject.name == "Meanwhile on the entrance 2"){
+            objectiveText.text = "Objective: Defeat the Soldier";
             player.GetComponent<PlayerHealth_Mansion>().currentHealth = 100;
             EnemySoldierAI commEAI = commander.GetComponent<EnemySoldierAI>();
             EnemySoldierAI sol1EAI = soldier1.GetComponent<EnemySoldierAI>();
@@ -164,8 +174,10 @@ public class DialogueManager_Mansion : MonoBehaviour
             meleeScript.enabled = true;
             GameObject.Find("Game Manager").GetComponent<CheckSoldierDie>().enabled = true;
         } else if(currGameObject.name == "After Combat - Chapter 2"){
+            objectiveText.text = "Objective: Leave the Attic";
             teleportScript.enabled = true;
         } else if(currGameObject.name == "Intro to Chapter 3"){
+            objectiveText.text = "Objective: Go to the 2nd Floor Kitchen";
             prechapter3.volume = 0.2f;
             prechapter3.loop = false;
             chapter2.Stop();
@@ -177,6 +189,7 @@ public class DialogueManager_Mansion : MonoBehaviour
             ambrose.transform.localScale = new Vector2(ambrose.transform.localScale.x * -1f, ambrose.transform.localScale.y);
         } else if(currGameObject.name == "In the kitchen" || currGameObject.name == "Spirit 1" || currGameObject.name == "Spirit 2"){
             if(currGameObject.name == "In the kitchen"){
+                objectiveText.text = "Objective: Interview the spirits";
                 chapter3.volume = 0.2f;
                 chapter3.loop = false;
                 prechapter3.Stop();
@@ -190,15 +203,21 @@ public class DialogueManager_Mansion : MonoBehaviour
             lysander.GetComponent<InteractDialogue>().enabled = true;
             lysander.GetComponent<InteractDialogue>().onrange = false;
             lysander.GetComponent<InteractDialogue>().dialogueTrigger = GameObject.Find("Confronting the Killer");
+        } else if(currGameObject.name == "End Interview"){
+            objectiveText.text = "Objective: Confront the Killer";
         } else if(currGameObject.name == "Confronting the Killer"){
+            objectiveText.text = "Objective: Defeat the Killer";
             player.GetComponent<PlayerHealth_Mansion>().currentHealth = 100;
             lysander.GetComponent<EnemyLysanderAI>().enabled = true;
             lysander.GetComponent<LysanderDie>().enabled = true;
             meleeScript.enabled = true;
         } else if(currGameObject.name == "Killer Defeated"){
+            objectiveText.text = "Objective: Go to the basement & enter the code";
             teleportScript.enabled = true;
         } else if(currGameObject.name == "On the way to the basement"){
             codeEnterColl.SetActive(true);
+        } else if(currGameObject.name == "At underground"){
+            objectiveText.text = "Objective: ???";
         } else if(currGameObject.name == "At underground 2"){
             StartCoroutine("changeScene");
         }
