@@ -94,6 +94,8 @@ public class DialogueManager_DreamStart : MonoBehaviour
             appear.SetTrigger("backgroundAppear");
             BG1.SetActive(true);
             BG2.SetActive(true);
+        } else if(counter == 3){
+            GameObject.Find("A").GetComponent<FollowPlayer>().speed = 3.2f;
         }
     }
 }

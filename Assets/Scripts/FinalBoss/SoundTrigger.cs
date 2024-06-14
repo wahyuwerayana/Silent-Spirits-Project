@@ -46,6 +46,7 @@ public class SoundTrigger : MonoBehaviour
             {
                 bgmAudioSource.clip = newSound;
                 bgmAudioSource.loop = false;
+                bgmAudioSource.volume = 0.2f;
                 bgmAudioSource.Play();
             }
 
