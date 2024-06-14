@@ -32,9 +32,9 @@ public class EnemySoldierAI : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         Vector3 scale = transform.localScale;
         if(player.position.x > transform.position.x){
-            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
+            scale.x = Mathf.Abs(scale.x) * (flip ? -1 : 1);
         } else{
-            scale.x = Mathf.Abs(scale.x) * (flip? -1 : 1);
+            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
         }
 
         transform.localScale = scale;

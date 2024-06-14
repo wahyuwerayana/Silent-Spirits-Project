@@ -16,7 +16,6 @@ public class Teleporter2 : MonoBehaviour
         {
             quizCanvas.SetActive(true);
             playerInRange = true;
-            Debug.Log("Player entered");
         }
     }
 
@@ -25,10 +24,8 @@ public class Teleporter2 : MonoBehaviour
         
         if (other.CompareTag("Player"))
         {
-
             playerInRange = false;
             quizCanvas.SetActive(false);
-            Debug.Log("Player left");
         }
 
     }

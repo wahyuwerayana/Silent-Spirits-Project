@@ -29,8 +29,7 @@ public class DialogueManager_Mansion : MonoBehaviour
     public GameObject commander, soldier1, soldier2, lysander;
     public GameObject entrance2, codeEnterColl;
     private Queue<bool> IsSpawnings = new Queue<bool>();
-    private AudioSource currAudio, nextAudio;
-    public AudioClip chapter1, prechapter2, chapter2, prechapter3, chapter3;
+    public AudioSource chapter1, prechapter2, chapter2, prechapter3, chapter3;
     [Header("Current Game Object Active")]
     public GameObject currGameObject;
     void Start(){
@@ -128,10 +127,9 @@ public class DialogueManager_Mansion : MonoBehaviour
         animator.SetBool("isOpen", false);
         movementScript.enabled = true;
         if(currGameObject.name == "Intro"){
-            currAudio.clip = chapter1;
-            currAudio.volume = 0.2f;
-            currAudio.loop = true;
-            currAudio.Play();
+            chapter1.volume = 0.2f;
+            chapter1.loop = true;
+            chapter1.Play();
         } else if(prepTime.activeSelf == false && currGameObject.name == "Preparation Time"){
             meleeScript.enabled = true;
             ambrose.enabled = true;
@@ -139,19 +137,15 @@ public class DialogueManager_Mansion : MonoBehaviour
         } else if(currGameObject.name == "After Combat"){
             teleportScript.enabled = true;
         } else if(currGameObject.name == "Prologue Chapter 2"){
-            nextAudio.clip = prechapter2;
-            nextAudio.volume = 0.2f;
-            nextAudio.loop = false;
-            currAudio.Stop();
-            currAudio = nextAudio;
-            currAudio.Play();
+            prechapter2.volume = 0.2f;
+            prechapter2.loop = false;
+            chapter1.Stop();
+            prechapter2.Play();
         } else if(currGameObject.name == "Arriving at the attic"){
-            nextAudio.clip = chapter2;
-            nextAudio.volume = 0.2f;
-            nextAudio.loop = true;
-            currAudio.Stop();
-            currAudio = nextAudio;
-            currAudio.Play();
+            chapter2.volume = 0.2f;
+            chapter2.loop = true;
+            prechapter2.Stop();
+            chapter2.Play();
             teleportScript.enabled = false;
             movementScript.enabled = false;
             StartCoroutine("intheothercorner");
@@ -172,12 +166,10 @@ public class DialogueManager_Mansion : MonoBehaviour
         } else if(currGameObject.name == "After Combat - Chapter 2"){
             teleportScript.enabled = true;
         } else if(currGameObject.name == "Intro to Chapter 3"){
-            nextAudio.clip = prechapter3;
-            nextAudio.volume = 0.2f;
-            nextAudio.loop = false;
-            currAudio.Stop();
-            currAudio = nextAudio;
-            currAudio.Play();
+            prechapter3.volume = 0.2f;
+            prechapter3.loop = false;
+            chapter2.Stop();
+            prechapter3.Play();
             commander.transform.position = new Vector2(BasementPos.position.x, BasementPos.position.y);
             soldier1.transform.position = new Vector2(BasementPos.position.x - 2f, BasementPos.position.y);
             soldier2.transform.position = new Vector2(BasementPos.position.x - 3f, BasementPos.position.y);
@@ -185,12 +177,10 @@ public class DialogueManager_Mansion : MonoBehaviour
             ambrose.transform.localScale = new Vector2(ambrose.transform.localScale.x * -1f, ambrose.transform.localScale.y);
         } else if(currGameObject.name == "In the kitchen" || currGameObject.name == "Spirit 1" || currGameObject.name == "Spirit 2"){
             if(currGameObject.name == "In the kitchen"){
-                nextAudio.clip = chapter3;
-                nextAudio.volume = 0.2f;
-                nextAudio.loop = false;
-                currAudio.Stop();
-                currAudio = nextAudio;
-                currAudio.Play();
+                chapter3.volume = 0.2f;
+                chapter3.loop = false;
+                prechapter3.Stop();
+                chapter3.Play();
             }
             teleportScript.enabled = false;
             currGameObject.GetComponent<DialogueTrigger>().enabled = false;
@@ -229,7 +219,7 @@ public class DialogueManager_Mansion : MonoBehaviour
         GameObject intheothercorner = GameObject.Find("In the other corner");
         yield return new WaitForSeconds(3f);
         intheothercorner.GetComponent<DialogueTrigger>().TriggerDialogue();
-        player.transform.position = new Vector2(player.transform.position.x - 15, player.transform.position.y);
+        player.transform.position = new Vector2(player.transform.position.x - 12, player.transform.position.y);
         if(player.transform.localScale.x > 0){
             player.transform.localScale = new Vector2(-player.transform.localScale.x, player.transform.localScale.y);
             player.GetComponent<PlayerMovement>().isFacingRight = false;

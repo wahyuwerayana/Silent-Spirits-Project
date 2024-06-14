@@ -16,6 +16,7 @@ public class GroundFall : MonoBehaviour
             if (collision.gameObject.CompareTag("Player"))
             {
                 rb.isKinematic = false; 
+                rb.mass = 100;
             }
         }
     }
