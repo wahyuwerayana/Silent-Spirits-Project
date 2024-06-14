@@ -26,11 +26,15 @@ public class DialogueTrigger_DreamStart : MonoBehaviour
         movementScript.enabled = false;
         rb.velocity = new Vector2(0, 0);
         movement.SetBool("isWalking", false);
+        if(this.name == "Second Dialogue")
+            GameObject.Find("A").GetComponent<FollowPlayer>().speed = 0.5f;
         StartCoroutine("startdialogue");
     }
 
     IEnumerator startdialogue(){
         yield return new WaitForSeconds(secondtoWait);
+        if(this.name == "Second Dialogue")
+            GameObject.Find("A").GetComponent<FollowPlayer>().speed = 0;
         TriggerDialogue();
         Destroy(gameObject);
     }

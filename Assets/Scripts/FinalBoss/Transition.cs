@@ -34,7 +34,7 @@ public class Transition : MonoBehaviour
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
             Debug.Log("Transitioning to ending scene.");
-            SceneManager.LoadScene("Ending");
+            SceneManager.LoadScene("EndGame");
         }
     }
 }
