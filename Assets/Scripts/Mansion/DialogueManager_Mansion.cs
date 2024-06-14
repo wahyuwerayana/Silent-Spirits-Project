@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueManager_Mansion : MonoBehaviour
@@ -26,8 +27,10 @@ public class DialogueManager_Mansion : MonoBehaviour
     private Queue<string> sentences;
     public PlayerMelee meleeScript;
     public GameObject commander, soldier1, soldier2, lysander;
-    public GameObject entrance2;
+    public GameObject entrance2, codeEnterColl;
     private Queue<bool> IsSpawnings = new Queue<bool>();
+    private AudioSource currAudio, nextAudio;
+    public AudioClip chapter1, prechapter2, chapter2, prechapter3, chapter3;
     [Header("Current Game Object Active")]
     public GameObject currGameObject;
     void Start(){
@@ -124,13 +127,31 @@ public class DialogueManager_Mansion : MonoBehaviour
     void EndDialogue(){
         animator.SetBool("isOpen", false);
         movementScript.enabled = true;
-        if(prepTime.activeSelf == false && currGameObject.name == "Preparation Time"){
+        if(currGameObject.name == "Intro"){
+            currAudio.clip = chapter1;
+            currAudio.volume = 0.2f;
+            currAudio.loop = true;
+            currAudio.Play();
+        } else if(prepTime.activeSelf == false && currGameObject.name == "Preparation Time"){
             meleeScript.enabled = true;
             ambrose.enabled = true;
             ambrose.GetComponent<AmbroseDie>().enabled = true;
         } else if(currGameObject.name == "After Combat"){
             teleportScript.enabled = true;
+        } else if(currGameObject.name == "Prologue Chapter 2"){
+            nextAudio.clip = prechapter2;
+            nextAudio.volume = 0.2f;
+            nextAudio.loop = false;
+            currAudio.Stop();
+            currAudio = nextAudio;
+            currAudio.Play();
         } else if(currGameObject.name == "Arriving at the attic"){
+            nextAudio.clip = chapter2;
+            nextAudio.volume = 0.2f;
+            nextAudio.loop = true;
+            currAudio.Stop();
+            currAudio = nextAudio;
+            currAudio.Play();
             teleportScript.enabled = false;
             movementScript.enabled = false;
             StartCoroutine("intheothercorner");
@@ -151,12 +172,26 @@ public class DialogueManager_Mansion : MonoBehaviour
         } else if(currGameObject.name == "After Combat - Chapter 2"){
             teleportScript.enabled = true;
         } else if(currGameObject.name == "Intro to Chapter 3"){
+            nextAudio.clip = prechapter3;
+            nextAudio.volume = 0.2f;
+            nextAudio.loop = false;
+            currAudio.Stop();
+            currAudio = nextAudio;
+            currAudio.Play();
             commander.transform.position = new Vector2(BasementPos.position.x, BasementPos.position.y);
             soldier1.transform.position = new Vector2(BasementPos.position.x - 2f, BasementPos.position.y);
             soldier2.transform.position = new Vector2(BasementPos.position.x - 3f, BasementPos.position.y);
             ambrose.transform.position = new Vector2(BasementPos.position.x + 6.5f, BasementPos.position.y);
             ambrose.transform.localScale = new Vector2(ambrose.transform.localScale.x * -1f, ambrose.transform.localScale.y);
         } else if(currGameObject.name == "In the kitchen" || currGameObject.name == "Spirit 1" || currGameObject.name == "Spirit 2"){
+            if(currGameObject.name == "In the kitchen"){
+                nextAudio.clip = chapter3;
+                nextAudio.volume = 0.2f;
+                nextAudio.loop = false;
+                currAudio.Stop();
+                currAudio = nextAudio;
+                currAudio.Play();
+            }
             teleportScript.enabled = false;
             currGameObject.GetComponent<DialogueTrigger>().enabled = false;
         } else if(currGameObject.name == "Spirit 3"){
@@ -172,6 +207,10 @@ public class DialogueManager_Mansion : MonoBehaviour
             meleeScript.enabled = true;
         } else if(currGameObject.name == "Killer Defeated"){
             teleportScript.enabled = true;
+        } else if(currGameObject.name == "On the way to the basement"){
+            codeEnterColl.SetActive(true);
+        } else if(currGameObject.name == "At underground 2"){
+            StartCoroutine("changeScene");
         }
     }
 
@@ -213,5 +252,10 @@ public class DialogueManager_Mansion : MonoBehaviour
     IEnumerator afterInterview(){
         yield return new WaitForSeconds(2f);
         GameObject.Find("End Interview").GetComponent<DialogueTrigger>().TriggerDialogue();
+    }
+
+    IEnumerator changeScene(){
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("Underground");
     }
 }

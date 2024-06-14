@@ -10,6 +10,7 @@ public class EnemySoldierAI : MonoBehaviour
     public float attackRange = 1f;
     public int attackDamage = 10;
     public Animator animator;
+    public bool flip = false;
 
     private bool isAttacking = false;
 
@@ -29,6 +30,14 @@ public class EnemySoldierAI : MonoBehaviour
         animator.SetBool("isWalking", true);
         Vector2 direction = (player.position - transform.position).normalized;
         transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        Vector3 scale = transform.localScale;
+        if(player.position.x > transform.position.x){
+            scale.x = Mathf.Abs(scale.x) * -1 * (flip ? -1 : 1);
+        } else{
+            scale.x = Mathf.Abs(scale.x) * (flip? -1 : 1);
+        }
+
+        transform.localScale = scale;
     }
 
     IEnumerator Attack(){
