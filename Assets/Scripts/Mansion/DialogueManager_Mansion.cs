@@ -19,13 +19,13 @@ public class DialogueManager_Mansion : MonoBehaviour
     public TMP_Text dialogueText;
     public Animator animator, movement;
     public GameObject Weapon;
-    public Transform Posisi, SoldierSpawnPos;
+    public Transform Posisi, SoldierSpawnPos, BasementPos;
     private bool showWholeSentence = false;
     private bool canClick = true;
     private Queue<string> charName;
     private Queue<string> sentences;
     public PlayerMelee meleeScript;
-    public GameObject commander, soldier1, soldier2;
+    public GameObject commander, soldier1, soldier2, lysander;
     public GameObject entrance2;
     private Queue<bool> IsSpawnings = new Queue<bool>();
     [Header("Current Game Object Active")]
@@ -150,6 +150,28 @@ public class DialogueManager_Mansion : MonoBehaviour
             GameObject.Find("Game Manager").GetComponent<CheckSoldierDie>().enabled = true;
         } else if(currGameObject.name == "After Combat - Chapter 2"){
             teleportScript.enabled = true;
+        } else if(currGameObject.name == "Intro to Chapter 3"){
+            commander.transform.position = new Vector2(BasementPos.position.x, BasementPos.position.y);
+            soldier1.transform.position = new Vector2(BasementPos.position.x - 2f, BasementPos.position.y);
+            soldier2.transform.position = new Vector2(BasementPos.position.x - 3f, BasementPos.position.y);
+            ambrose.transform.position = new Vector2(BasementPos.position.x + 6.5f, BasementPos.position.y);
+            ambrose.transform.localScale = new Vector2(ambrose.transform.localScale.x * -1f, ambrose.transform.localScale.y);
+        } else if(currGameObject.name == "In the kitchen" || currGameObject.name == "Spirit 1" || currGameObject.name == "Spirit 2"){
+            teleportScript.enabled = false;
+            currGameObject.GetComponent<DialogueTrigger>().enabled = false;
+        } else if(currGameObject.name == "Spirit 3"){
+            StartCoroutine("afterInterview");
+            lysander.GetComponent<BoxCollider2D>().enabled = true;
+            lysander.GetComponent<InteractDialogue>().enabled = true;
+            lysander.GetComponent<InteractDialogue>().onrange = false;
+            lysander.GetComponent<InteractDialogue>().dialogueTrigger = GameObject.Find("Confronting the Killer");
+        } else if(currGameObject.name == "Confronting the Killer"){
+            player.GetComponent<PlayerHealth_Mansion>().currentHealth = 100;
+            lysander.GetComponent<EnemyLysanderAI>().enabled = true;
+            lysander.GetComponent<LysanderDie>().enabled = true;
+            meleeScript.enabled = true;
+        } else if(currGameObject.name == "Killer Defeated"){
+            teleportScript.enabled = true;
         }
     }
 
@@ -186,5 +208,10 @@ public class DialogueManager_Mansion : MonoBehaviour
         soldier1.transform.localScale = new Vector2(-soldier1.transform.localScale.x, soldier1.transform.localScale.y);
         soldier2.transform.localScale = new Vector2(-soldier2.transform.localScale.x, soldier2.transform.localScale.y);
         soldier2.transform.position = new Vector2(SoldierSpawnPos.position.x + 4, SoldierSpawnPos.position.y);
+    }
+
+    IEnumerator afterInterview(){
+        yield return new WaitForSeconds(2f);
+        GameObject.Find("End Interview").GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 }
