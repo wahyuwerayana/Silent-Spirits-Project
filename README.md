@@ -7,7 +7,7 @@
 ## 🎯Gameplay
 
 ## ⚙️Setup
-- Go to the release tab located in the right side of this page.
-- Download the .zip file from the latest release available.
-- Extract the .zip file containing the game.
-- Open the .exe file.
+- Go <a href="https://xtremehyper.itch.io/forbidden-dreams">here</a> to download the game file
+- Scroll down and click the Download Now button
+- Extract the .zip file
+- Open the .exe file
