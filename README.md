@@ -22,3 +22,8 @@ Follow the story of Anisa in the dream world and find out how she escape. Using 
 - Scroll down and click the Download Now button
 - Extract the .zip file
 - Open the .exe file
+
+## The Team
+- Aaron Medhavi Kusnandar & Allan Alexander Matthew as the Game Designer
+- I Gde Wahyu Werayana Kusuma & Vincent Tanujaya as the Game Programmer and Game Artist
+- Nicholas Diporedjo as the Sound Artist
