@@ -1,5 +1,5 @@
 # **Forbidden Dreams**
-<img src="https://github.com/wahyuwerayana/S-PONG/assets/115724777/2d7d8995-1cf6-4ea0-944f-9b02478d0b53" height="225px">
+
 
 ## 📄About
 
