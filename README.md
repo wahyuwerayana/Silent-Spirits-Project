@@ -33,6 +33,14 @@
 ### **Player**
 | **Script Name**    | **Function**                            |
 | ------------------ | --------------------------------------- |
+| `PlayerMovement.cs` | Manage the player movement logic in the game |
+| `PlayerTeleport.cs` | Manage the teleport when the player is inside a teleportable area and pressed a certain button |
+| `PlayerInteract.cs` | Make the player can interact with the NPC |
+| `PlayerInventory.cs` | The inventory system of the player |
+### **Other**
+| **Script Name**    | **Function**                            |
+| ------------------ | --------------------------------------- |
+| `Teleporter.cs` | Manage the area of the teleporter, so the player can only teleport on a certain place |
 
 ## 👥The Team
 - [Aaron Medhavi Kusnandar](https://github.com/Aaronmedhavi) & [Allan Alexander Matthew](https://github.com/JeroekPanggang) as the Game Designer
