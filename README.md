@@ -7,6 +7,9 @@
 - Made using Unity Editor 2022.3.19f1
 - Assets are made by the Game Artist + from Itch.io
 
+## 🎲Game Mechanics
+Player will follow the story of Anisa to escape from the dream world. In the mansion, player's need to complete the objective to get into the boss room. When fighting the boss, player's need to answer some SIBI questions to defeat the boss.
+
 ## 📂File Description
 ```
 ├── Forbidden-Dream-Project          # This folder contains all the project files.
@@ -37,10 +40,31 @@
 | `PlayerTeleport.cs` | Manage the teleport when the player is inside a teleportable area and pressed a certain button |
 | `PlayerInteract.cs` | Make the player can interact with the NPC |
 | `PlayerInventory.cs` | The inventory system of the player |
+### **Item**
+| **Script Name**    | **Function**                            |
+| ------------------ | --------------------------------------- |
+| `Pickup.cs` | Handle the pickupable item in the game |
+### **Boss Fight**
+| **Script Name**    | **Function**                            |
+| ------------------ | --------------------------------------- |
+| `AnswerScript.cs` | Handle the question answer, when the answer is correct the boss will take damage, otherwise the player will take damage |
+| `HealthBarScript.cs` | Manage the health system for the player and the boss |
+| `etc` |  |
+### **Dialogue System**
+| **Script Name**    | **Function**                            |
+| ------------------ | --------------------------------------- |
+| `Dialogue.cs` | Store the dialogue text |
+| `DialogueManager.cs` | Manage the dialogue system in the game |
+| `DialogueTrigger.cs` | Start the dialogue when the player trigger a specific gameobjects |
 ### **Other**
 | **Script Name**    | **Function**                            |
 | ------------------ | --------------------------------------- |
+| `CameraStart.cs` | Start the camera transition animation when on a certain scene |
+| `CanvasSwitching.cs` | Handle the opening and closing of the SIBI Guidebook |
+| `ChangeScene.cs` | Start the transition to another scene when a player enters a trigger |
+| `groundFall.cs` | Make a specific ground fall when player enters a trigger  |
 | `Teleporter.cs` | Manage the area of the teleporter, so the player can only teleport on a certain place |
+| `etc` |  |
 
 ## 👥The Team
 - [Aaron Medhavi Kusnandar](https://github.com/Aaronmedhavi) & [Allan Alexander Matthew](https://github.com/JeroekPanggang) as the Game Designer
