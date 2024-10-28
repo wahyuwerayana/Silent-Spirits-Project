@@ -93,7 +93,7 @@ Follow the story of Anisa in the dream world and find out how she escape. Using 
 *Player can check the control manual when reaching the mansion chapter by clicking the book icon in the top right corner.
 
 ## ⚙️Setup
-- Go <a href="https://xtremehyper.itch.io/forbidden-dreams">here</a> to download the game file
-- Scroll down and click the Download Now button
+- Go <a href="https://xtremehyper.itch.io/forbidden-dreams">here</a> to download the game file or go to the release tab
+- Download the file
 - Extract the .zip file
 - Open the .exe file
